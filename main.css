@@ -135,6 +135,7 @@ body {
     position: absolute;
     bottom: 120px;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .sidebar .account .profile .user {
@@ -143,4 +144,31 @@ body {
     position: absolute;
     bottom: 125px;
     margin-left: 60px;
+    cursor: pointer;
+}
+
+.app-content .navbar {
+    width: 100%;
+    background: rgba(8, 11, 18, .5);
+    height: 90px;
+    overflow-Y: auto;
+}
+
+.app-content .navbar .upgrade {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.app-content .navbar .upgrade .btn-info {
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    background: #0000;
+    padding: 14px;
+    border-radius: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    cursor: pointer;
+
 }
