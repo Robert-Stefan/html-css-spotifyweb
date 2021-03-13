@@ -17,12 +17,6 @@ body {
     display: flex;
 }
 
-/*FOOTER*/
-.main-footer {
-    background-color:#282828;
-    height: 100px;
-}
-
 /*SIDEBAR*/
 .app-content .sidebar {
     background-color: black;
@@ -147,19 +141,21 @@ body {
     cursor: pointer;
 }
 
+.app-content .spotify {
+    width: calc(100% - 220px);
+    overflow-y: auto;
+}
+
+/*UPGRADE*/
 .app-content .navbar {
-    width: 100%;
+    width: calc(100% - 220px);
     background: rgba(8, 11, 18, .5);
     height: 90px;
-    overflow-Y: auto;
+    position: fixed;
+    text-align: right;
 }
 
-.app-content .navbar .upgrade {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.app-content .navbar .upgrade .btn-info {
+.app-content .spotify .navbar .btn-info {
     margin-top: 20px;
     margin-right: 20px;
     color: #fff;
@@ -170,5 +166,136 @@ body {
     padding-left: 35px;
     padding-right: 35px;
     cursor: pointer;
+}
 
+/*HEADER SPOTIFY*/
+.app-content .titles {
+    height: 90px;
+    
+}
+
+.app-content .title1 {
+    text-align: center;
+    width: 100%;
+}
+
+.app-content .music {
+    padding-top: 100px;
+    padding-left: 20px;
+    flex-basis: calc(100% - 220px);
+    flex-wrap: wrap;
+
+}
+.app-content .titles li {
+    color: #6c6f75;
+    list-style: none;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+.app-content .icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.app-content .col {
+    width: calc((100% / 6) - 20px);
+}
+
+.app-content .box {
+    width: 200px;
+    text-align: center;
+}
+
+.app-content .box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.app-content .spotify h3 {
+    font-size: 17px;
+    color: white;
+    padding-top: 10px;
+}
+
+.app-content .spotify p {
+    color: #7d7f84;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.app-content .played {
+    color: white;
+    margin: 30px 0;
+}
+
+/*ALBUM*/
+.app-content .album h2 {
+    margin-top: 30px;
+    color: white;
+}
+
+.app-content .album p {
+    padding-bottom: 20px;
+}
+
+
+/* ARTISTS*/
+
+.app-content .artists img {
+    border-radius: 50%;
+}
+
+/*FOOTER*/
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#282828;
+    height: 100px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    display: flex; 
+}
+
+.main-footer img {
+    height: 50px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.main-footer .footer-left .textplayer {
+    position: absolute;
+    bottom: 20px;
+    left: 75px;
+
+}
+
+.main-footer .footer-left .titlemusic {
+    font-size: 15px;
+    color: white;
+    padding-bottom: 10px;
+    
+}
+
+.main-footer .footer-left .description {
+    color: #707070;
+    font-size: 13px;
+}
+
+.main-footer .footer-left i {
+    color: #707070;
+}
+
+.main-footer .footer-left .textplayer .cuore i {
+    margin-left: 30px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    
 }
