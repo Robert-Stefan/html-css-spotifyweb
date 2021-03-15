@@ -153,6 +153,7 @@ body {
     height: 90px;
     position: fixed;
     text-align: right;
+    z-index: 1;
 }
 
 .app-content .spotify .navbar .btn-info {
@@ -177,6 +178,33 @@ body {
 .app-content .title1 {
     text-align: center;
     width: 100%;
+}
+
+.app-content .titles li:not(:first-child) {
+    padding-bottom: 20px;
+}
+
+.app-content .titles li:first-child::after {
+    content: '';
+    display: inline-block;
+    width: 40%;
+    height: 2px;
+    position: relative;
+    left: 20px;
+    bottom: 7px;
+    background: #9ce62d;
+    border-radius: 5px;
+}
+
+.app-content .titles li::after {
+    content: '';
+    display: inline-block;
+    width: 20%;
+    height: 2px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
 }
 
 .app-content .music {
@@ -205,14 +233,45 @@ body {
 }
 
 .app-content .box {
+    position: relative;
     width: 200px;
     text-align: center;
 }
 
 .app-content .box img {
+    display: block;
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+}
+.app-content .box .play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.app-content .box .play.rotondo {
+border-radius: 50%;
+}
+
+.app-content .icons .play i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+}
+
+.app-content .box:hover .play {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .app-content .spotify h3 {
@@ -322,6 +381,11 @@ body {
     align-items: center;
     justify-content: space-between;
 
+}
+
+.main-footer .footer-center .playerbar .start-song,
+.main-footer .footer-center .playerbar .end-song {
+    color: white;
 }
 
 .main-footer .footer-center .player i {
