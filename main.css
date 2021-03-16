@@ -68,7 +68,7 @@ body {
 }
 
 /*RESPONSIVE SECTION*/
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 775px) {
     .app-content .sidebar .account {
     visibility: hidden;
     }
@@ -364,6 +364,7 @@ body {
     border-radius: 5px;
 }
 
+/*MUSIC SPOTIFY*/
 .app-content .music {
     padding-top: 100px;
     padding-left: 20px;
@@ -494,6 +495,7 @@ border-radius: 50%;
     display: flex; 
 }
 
+/*FOOTER LEFT*/
 .main-footer .footer-left {
     align-items: center;
     flex-basis: 260px;
@@ -608,6 +610,7 @@ border-radius: 50%;
     color: #fff;
 }
 
+/*FOOTER RIGHT*/
 .main-footer .footer-right {
     flex-direction: row;
     flex-basis: 260px;
