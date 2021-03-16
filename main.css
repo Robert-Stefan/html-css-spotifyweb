@@ -54,6 +54,19 @@ body {
     cursor: pointer;
 }
 
+/*RESPONSIVE SECTION*/
+.app-content .sidebar .list1 span:hover,
+.app-content .sidebar .list2 span:hover,
+.app-content .sidebar .list2 i:hover,
+.app-content .sidebar .account .txtdownload:hover {
+    color: white;
+}
+
+@media screen and (max-height: 600px) {
+    .app-content .sidebar .account {
+    visibility: hidden;
+    }
+}
 .color-active {
     color: white;
 }
@@ -169,10 +182,18 @@ body {
     cursor: pointer;
 }
 
+.app-content .spotify .navbar .btn-info:hover {
+    transform: scale(1.1);
+}
+
 /*HEADER SPOTIFY*/
 .app-content .titles {
     height: 90px;
     
+}
+
+.spotify .music .title1 li:hover {
+    color: white;
 }
 
 .app-content .title1 {
@@ -221,6 +242,7 @@ body {
     font-size: 15px;
     text-align: center;
     padding: 10px;
+    cursor: pointer;
 }
 
 .app-content .icons {
@@ -354,15 +376,26 @@ border-radius: 50%;
     display: block;
 }
 
+.main-footer .footer-left .textplayer .description:hover {
+    text-decoration: underline;
+    color: white;
+}
+
 .main-footer .footer-left .description {
     color: #707070;
     font-size: 15px;
     display: block;
+    cursor: pointer;
+}
+
+.main-footer .footer-left .fonticon i:hover {
+    color: white;
 }
 
 .main-footer .footer-left i {
     color: #707070;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .main-footer .footer-left .fa-heart {
@@ -397,6 +430,10 @@ border-radius: 50%;
 
 .main-footer .footer-center .player i:nth-child(3) {
     font-size: 30px;
+}
+
+.main-footer .footer-center .player i:nth-child(3):hover {
+    transform: scale(1.1);
 }
 
 .main-footer .footer-center .player {
