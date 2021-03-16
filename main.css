@@ -72,6 +72,23 @@ body {
     .app-content .sidebar .account {
     visibility: hidden;
     }
+    
+}
+
+@media screen and (max-height: 350px) {
+    .app-content .sidebar {
+        overflow-y: hidden;
+    }
+
+    .app-content .sidebar .list1 li:first-child {
+        border: none;
+    } 
+}
+
+@media screen and (max-height: 200px) {
+    .app-content .spotify .navbar {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -168,7 +185,6 @@ body {
     }
 }
 
-
 /*END RESPONSIVE*/
 .color-active {
     color: white;
@@ -177,6 +193,7 @@ body {
 .color-side {
     color: #d2d2d2;
 }
+
 
 .sidebar h2 {
     text-transform: uppercase;
@@ -216,6 +233,7 @@ body {
 .sidebar .list2 {
     overflow-Y: auto;
 }
+
 
 .sidebar .account .install {
     border-bottom: 1px solid gray;
