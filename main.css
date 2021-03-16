@@ -550,6 +550,7 @@ border-radius: 50%;
 
 .main-footer .footer-center .barmusic {
     content: '';
+    position: relative;
     width: 100%;
     height: 2px;
     border: 2px solid;
@@ -558,6 +559,21 @@ border-radius: 50%;
     margin-left: 10px;
     cursor: pointer;
     color: #5a5a5a;
+}
+
+.main-footer .footer-center .barmusic .barprogress {
+    content: '';
+    position: absolute;
+    width: 15%;
+    right: 83%;
+    bottom: -2px;
+    height: 2px;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #fff;
 }
 
 .main-footer .footer-right {
@@ -573,6 +589,7 @@ border-radius: 50%;
 
 .main-footer .footer-right .volume {
     content: '';
+    position: relative;
     width: 52%;
     height: 2px;
     border: 2px solid;
@@ -582,4 +599,44 @@ border-radius: 50%;
     cursor: pointer;
     color: #5a5a5a;
     align-self: center;
+}
+
+.main-footer .footer-right .volumeprogress {
+    content: '';
+    position: absolute;
+    width: 52%;
+    height: 2px;
+    bottom: -2px;
+    right: 41%;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #fff;
+    align-self: center;
+}
+
+.main-footer .footer-right .volumeprogress .circle,
+.main-footer .footer-center .barmusic .barprogress .circle {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: -2px;
+    left: 60px;
+    top: -7px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;   
+}
+
+.main-footer .footer-right .volumeprogress:hover .circle,
+.main-footer .footer-center .barmusic .barprogress:hover .circle {
+    opacity: 1;
+}
+
+.main-footer .footer-right .volume .volumeprogress:hover,
+.main-footer .footer-center .barmusic .barprogress:hover {
+    color: #9ce62d;
 }
