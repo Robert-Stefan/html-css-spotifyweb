@@ -34,6 +34,10 @@ body {
     margin-left: 20px;
 }
 
+.app-content .sidebar .logo-small {
+    visibility: hidden;
+}
+
 .app-content .sidebar .iconside {
     width: 13%;
     cursor: pointer;
@@ -54,7 +58,7 @@ body {
     cursor: pointer;
 }
 
-/*RESPONSIVE SECTION*/
+
 .app-content .sidebar .list1 span:hover,
 .app-content .sidebar .list2 span:hover,
 .app-content .sidebar .list2 i:hover,
@@ -62,11 +66,83 @@ body {
     color: white;
 }
 
+/*RESPONSIVE SECTION*/
 @media screen and (max-height: 600px) {
     .app-content .sidebar .account {
     visibility: hidden;
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .music .icons .col {
+        flex-basis: calc(100% / 4 - 20px);
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .music .icons .col {
+        flex-basis: calc(100% / 2 - 20px);
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .music .icons .col {
+        flex-basis: calc(100% / 2 - 20px);
+        padding-top: 20px;
+    }
+
+    .app-content .sidebar .logo,
+    .app-content .sidebar .list1,
+    .app-content .sidebar h2,
+    .app-content .sidebar .list2,
+    .app-content .sidebar .account {
+        visibility: hidden;
+    }
+
+    .app-content .sidebar .logo-small {
+        visibility: visible;
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 5px;
+        transform: translateX(-50%);
+    }
+
+    .app-content .sidebar .list1 img {
+        visibility: visible;
+        width: 50%;
+    }
+
+    .app-content .sidebar {
+        flex-basis: 50px;
+        position: relative;
+    }
+
+    .app-content .spotify {
+        flex-grow: 1;
+    }
+
+    .app-content .spotify .navbar {
+        width: calc(100% - 85px);
+    }
+
+    .app-content .music {
+        justify-content: center;
+    }
+
+    .main-footer .footer-left .far.fa-heart {
+        margin-left: 0;
+    }
+
+    .main-footer .footer-left i {
+        padding-left: 20px;
+    }
+}
+
+
+/*END RESPONSIVE*/
 .color-active {
     color: white;
 }
@@ -133,6 +209,7 @@ body {
     color: #717171;
     vertical-align: super;
     padding-top: 10px;
+    cursor: pointer;
 }
 
 .sidebar .account .profile .avatar {
