@@ -36,6 +36,7 @@ body {
 
 .app-content .sidebar .logo-small {
     visibility: hidden;
+    width: 5%;
 }
 
 .app-content .sidebar .iconside {
@@ -115,6 +116,23 @@ body {
         width: 50%;
     }
 
+    .app-content .sidebar .account .profile .avatar {
+        position: absolute;
+        bottom: 3px;
+        right: 35px;
+    }
+
+    .app-content .sidebar .account .install .download {
+        position: absolute;
+        top: 120px;
+        right: 133px;
+    }
+
+    .app-content .sidebar .account img {
+        visibility: visible;
+        width: 50%;
+    }
+
     .app-content .sidebar {
         flex-basis: 50px;
         position: relative;
@@ -138,6 +156,15 @@ body {
 
     .main-footer .footer-left i {
         padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-footer .footer-right .last-icons i {
+        color: #fff;
+        padding-left: 0px;
+        display: inline-block;
+        font-size: 11px;
+        padding-bottom: 6px;
     }
 }
 
