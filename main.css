@@ -183,6 +183,20 @@ body {
         font-size: 11px;
         padding-bottom: 6px;
     }
+
+    .main-footer .footer-right .volume .volumeprogress .circle,
+    .main-footer .footer-center .barmusic .barprogress .circle {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: -2px;
+    left: 20px;
+    top: -7px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;   
+    }
 }
 
 /*END RESPONSIVE*/
@@ -636,7 +650,7 @@ border-radius: 50%;
 }
 
 .main-footer .footer-right .volumeprogress .circle,
-.main-footer .footer-center .barmusic .barprogress .circle {
+.main-footer .footer-center .barprogress .circle {
     content: '';
     position: absolute;
     width: 15px;
